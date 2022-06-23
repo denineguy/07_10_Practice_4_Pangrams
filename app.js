@@ -5,3 +5,19 @@
 
 // isPangram('The five boxing wizards jump quickly') //true
 // isPangram('The five boxing wizards jump quick') //false
+
+function isPangram(sentence) {
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    
+
+    for(let letter of alphabet) {
+        //make sentence lowercase
+        //check is letter in sentence
+        //if it is not then return false
+
+        if(sentence.toLowerCase().indexOf(letter) === -1) {
+            return false;
+        }
+    }
+    return true;
+}
